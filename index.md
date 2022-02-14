@@ -405,23 +405,12 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
-  {% if site.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
   
   To participate in this Software Carpentry workshop,
   you will need access to software as described below.
   In addition, you will need an up-to-date web browser.
 </p>
-
 @@ -419,7 +411,7 @@ For online workshops, the section below provides:
-
 
 If you do not use Zoom for your online workshop, edit the file
 `_includes/install_instructions/videoconferencing.html`
@@ -429,13 +418,11 @@ to include the relevant installation instructions.
 {% endcomment %}
 {% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
-{% endif %}
-
-{% comment %}
 @@ -430,14 +422,5 @@ These are the installation instructions for the tools used
 during the workshop.
 {% endcomment %}
 
+
+
 Please check [the "Setup" page of the lesson site](https://swcarpentry.github.io/r-novice-gapminder/setup.html) for instructions to follow
 to obtain the software you will need to follow the lesson.
-
